@@ -1,0 +1,46 @@
+[debug] [2024-04-24T08:56:59.638Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T08:56:59.641Z] Command:       C:\Program Files\nodejs\node.exe D:\CU\learn12\seLab\as11\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-24T08:56:59.642Z] CLI Version:   13.7.4
+[debug] [2024-04-24T08:56:59.642Z] Platform:      win32
+[debug] [2024-04-24T08:56:59.642Z] Node Version:  v20.11.1
+[debug] [2024-04-24T08:56:59.642Z] Time:          Wed Apr 24 2024 15:56:59 GMT+0700 (เวลาอินโดจีน)
+[debug] [2024-04-24T08:56:59.642Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-24T08:56:59.879Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T08:56:59.880Z] > authorizing via signed-in user (6633267521@student.chula.ac.th)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-24T08:56:59.901Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-24T08:56:59.902Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-24T08:56:59.903Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":9999}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-24T08:56:59.913Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-as11-641a8.json
+[debug] [2024-04-24T08:56:59.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/as11-641a8/sites 
+[debug] [2024-04-24T08:57:00.753Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/as11-641a8/sites 200
+[debug] [2024-04-24T08:57:00.754Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/as11-641a8/sites {"sites":[{"name":"projects/as11-641a8/sites/as11-641a8","defaultUrl":"https://as11-641a8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-24T08:57:00.754Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8/webApps/-/config [none]
+[debug] [2024-04-24T08:57:01.464Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8/webApps/-/config 200
+[debug] [2024-04-24T08:57:01.464Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8/webApps/-/config {"projectId":"as11-641a8","storageBucket":"as11-641a8.appspot.com","apiKey":"AIzaSyBl_W_CMwyGMSHns48So9dIdXEONg9V-ks","authDomain":"as11-641a8.firebaseapp.com","messagingSenderId":"249841719577"}
+[debug] [2024-04-24T08:57:01.470Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8 [none]
+[debug] [2024-04-24T08:57:01.802Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8 200
+[debug] [2024-04-24T08:57:01.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/as11-641a8 {"projectId":"as11-641a8","projectNumber":"249841719577","displayName":"as11","name":"projects/as11-641a8","resources":{"hostingSite":"as11-641a8"},"state":"ACTIVE","etag":"1_a5421709-0113-4bd7-85e8-9fbd6154a858"}
+[info] i  hosting[as11-641a8]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[as11-641a8]: Local server: http://127.0.0.1:9999 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:9999\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:9999 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] "GET / HTTP/1.1" 200 385 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] \"GET / HTTP/1.1\" 200 385 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:08:57:10 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
